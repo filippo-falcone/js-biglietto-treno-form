@@ -1,5 +1,5 @@
 /* Funzionalità Biglietto*/
-// Quando l'utente clicca sul bottone calcola dobbiamo leggerne i dati
+// Quando l'utente clicca sul bottone calcola leggo i dati
 const priceBtn = document.querySelector('#price-btn');
 priceBtn.addEventListener('click', function () {
     const userKm = parseInt(document.querySelector('#km').value);
@@ -20,7 +20,7 @@ priceBtn.addEventListener('click', function () {
     const userMessage = document.querySelector('#message').innerHTML += finalPrice.toFixed(2) + '€';
 });
 
-// Quando l'utente clicca sul bottone pulisci dobbiamo cancellare tutti i dati inseriti
+// Quando l'utente clicca sul bottone pulisci cancello tutti i dati inseriti
 const resetBtn = document.querySelector('#reset-btn');
 resetBtn.addEventListener('click', function () {
     const userKm = document.querySelector('#km').value = '';
