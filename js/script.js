@@ -17,7 +17,7 @@ priceBtn.addEventListener('click', function () {
     // - Calcolo il prezzo finale
     const finalPrice = ticketPrice - discount;
     // - Stampo il prezzo all'utente
-    const userMessage = document.querySelector('#message').innerHTML += finalPrice.toFixed(2) + '€';
+    const userMessage = document.querySelector('#message').innerHTML = 'Il costo del biglietto è: ' + finalPrice.toFixed(2) + '€';
 });
 
 // Quando l'utente clicca sul bottone pulisci cancello tutti i dati inseriti
